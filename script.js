@@ -8,14 +8,26 @@ let arr = [
 
 function PrintStudentswithMap() {
   //Write your code here , just console.log
+  arr.map(myfunction);
+  function myfunction(item) {
+    if(item.marks > 50)
+    console.log(item.name);
+  }
 }
 
 function PrintStudentsbyForEach() {
   //Write your code here , just console.log
+  arr.forEach(myfunction);
+  function myfunction(item) {
+    if(item.marks > 50)
+    console.log(item.name);
+  }
 }
 
 function addData() {
   //Write your code here, just console.log
+  arr.push({id:4,name:"susan",age:"20",marks:45});
+  console.log(arr);
 }
 
 function removeFailedStudent() {
@@ -24,4 +36,11 @@ function removeFailedStudent() {
 
 function concatenateArray() {
   //Write your code here, just console.log
+  let arr2 = [
+    { id: 5, name:"Raj",age:"23",marks:42 },
+    { id: 6, name:"Ujjwal",age:"19",marks:98 },
+    { id: 7, name:"Anjali",age:"22",marks:70 },
+  ];
+  let array = arr.concat(arr2);
+  console.log(array);
 }
