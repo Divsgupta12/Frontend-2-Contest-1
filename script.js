@@ -32,6 +32,7 @@ function addData() {
 
 function removeFailedStudent() {
   //Write your code here, just console.log
+  
 }
 
 function concatenateArray() {
